@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "donutbasefinder",
+	"version": "${version}",
+	"name": "Donut Base Finder",
+	"description": "Client-side block ESP that draws colour-coded wireframes through walls for chests, shulker boxes and spawners. Press F + U to open the settings screen.",
+	"authors": [
+		"Donut Base Finder"
+	],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.donutbasefinder.DonutBaseFinder"
+		]
+	},
+	"mixins": [
+		{
+			"config": "donutbasefinder.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
